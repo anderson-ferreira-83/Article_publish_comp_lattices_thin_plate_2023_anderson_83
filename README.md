@@ -1,0 +1,2 @@
+# Artigo_1_publish_comp_lattices_thin_plate_2023_anderson_83
+Data processed and results
