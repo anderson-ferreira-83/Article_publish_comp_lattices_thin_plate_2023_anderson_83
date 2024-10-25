@@ -2,7 +2,7 @@ function [frq_inf11,frq_sup11,delta_f_gap11,frq_inf21,frq_sup21,delta_f_gap21] =
 %%
 % Inicio da contagem de tempo de carregamento de dados
 %%
-path_database = 'I:\Meu Drive\200_ARTIGO_REVISTAS\Artigo_1_Revista_comp_lattices_thin_plate_2023\4_Modelagem_Python_Matlab_Comsol\0_Codes_Matlab_COMSOL\0_BACKUPS_CODES\PWE_Kirchhoff\2_Plot_Line\1_database';
+path_database = 'path/database';
 cd(path_database);
 % Load Data PWE Resonator
 pwe_file_w_res = strcat('4_1_a_0.10_h_0.002_lattice_h_res_',num2str(fr_f),'_pwe_w_data_full_path.csv');
