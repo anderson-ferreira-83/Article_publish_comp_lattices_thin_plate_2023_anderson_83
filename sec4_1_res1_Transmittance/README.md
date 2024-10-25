@@ -5,7 +5,7 @@ This folder contains the PDF files resulting from the analyses and processes per
 ## Pipeline of results
 
 <div style="text-align: center;">
-  <img src="fig1_pipeline_data.drawio.svg" alt="Figure" width="500"/>
+  <img src="fig1_pipeline_data.drawio.svg" alt="Figure" width="600"/>
 </div>
 
 
