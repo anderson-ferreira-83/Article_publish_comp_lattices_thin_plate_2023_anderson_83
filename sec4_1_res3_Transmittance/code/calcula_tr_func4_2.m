@@ -285,8 +285,16 @@ for j= 1:1:1
                 line_coord_zero = size(coordenadas_sem_zeros);
                 % Plot dos picos de transmitancia para as Redes:
                 for i=1:line_coord_zero(1)
-                    plot_coords{cont} = plot(coordenadas_sem_zeros(i,3),coordenadas_sem_zeros(i,2),type_point{w},...
-                        'MarkerFaceColor',colorPalette_points{index_color},'MarkerEdgeColor','k','MarkerSize',12,'LineWidth',1.2)
+                    if i == 1
+                        markerType = 'o'; % Círculo
+                        sizer_marker = 12;
+                    else
+                        markerType = 's'; % Quadrado
+                        sizer_marker = 15;
+                    end                    
+                    plot_coords{cont} = plot(coordenadas_sem_zeros(i,3), coordenadas_sem_zeros(i,2), markerType,...
+                        'MarkerFaceColor', colorPalette_points{index_color}, 'MarkerEdgeColor', 'k', ...
+                        'MarkerSize', sizer_marker, 'LineWidth', 1.2);
                     if w==1
                         legend_strings_mp1{cont} = sprintf(strcat('f_r = %g [Hz] (FEM) - Peak value : %.2f [dB] in %.2f [Hz]'),freq,...
                             coordenadas_sem_zeros(i,2),coordenadas_sem_zeros(i,3))
